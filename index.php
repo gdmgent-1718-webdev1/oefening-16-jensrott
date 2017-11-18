@@ -1,6 +1,6 @@
 <?php
 
-require 'Kunstwerken/AbstractKunstWerk.php';
+//require 'Kunstwerken/AbstractKunstWerk.php';
 
 spl_autoload_register(function($name) {
     $path = "${name}.php";
@@ -19,4 +19,10 @@ $kunstwerk9 = new Kunstwerken\Vaas();
 
 
 
-?>
+$kunstwerk8->setAfbeelding("Hangende bloem");
+$kunstwerk8->SetTitle("A test title");
+$kunstwerk8->SetYear(2017);
+$kunstwerk8->SetArtist("Picasso");
+
+var_dump($kunstwerk8);
+
